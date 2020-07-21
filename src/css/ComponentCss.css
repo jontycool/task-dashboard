@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* --------------------CSS For Home.js Component-------------------- */
+
+.sidebar {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #293048, #252c45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+a {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+.main-logo,
+.user-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.top-logo,
+.bottom-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-content: center;
+  align-self: center;
+}
+.top-logo {
+  height: 25%;
+}
+.bottom-logo {
+  height: 45%;
+}
+
+.collapsible-sidebar {
+  margin-left: 55px;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-right: 1px solid #d9d9d9;
+  border-top-left-radius: 10px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.filter-search {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-search input {
+  width: 88%;
+  outline: none;
+  border: none;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.project-name h3 {
+  margin-left: 3px;
+  align-self: center;
+}
+
+.home-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+  align-self: center;
+  background-color: #ff0476;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-workspace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workspace-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workspace-button {
+  background-color: #fff;
+  width: 90%;
+  border-radius: 5px;
+  margin: 5px 0px;
+  text-align: left !important;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.workspace-button:hover {
+  outline: none;
+  border: none;
+  background-color: #e6f4ff;
+}
+.workspace-button:focus {
+  border: none;
+  outline: none;
+}
+
+.active {
+  background-color: #cbeafe !important;
+}
+
+.dashboards,
+.mobile-app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.main-content {
+  margin-left: 225px;
+  padding: 10px 25px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* --------------------CSS For Header.js Component-------------------- */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-name {
+  display: flex;
+  align-items: center;
+}
+
+.header-name {
+  align-self: center;
+}
+
+.header-name input {
+  border: none;
+  outline: none;
+}
+
+.star-container {
+  background-color: #fff;
+  border: none;
+}
+.star {
+  margin: 0px 0px 0px 5px;
+  font-size: 35px;
+  color: #e6e9f0;
+}
+
+/* This class is also being used in TableActions.js component as well */
+.action-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-user-icon {
+  padding: 1px 2px;
+  margin: 0px 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+}
+
+.header-user-icon div {
+  width: 30px;
+  height: 30px;
+}
+.header-user-icon div:nth-child(2) {
+  align-self: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #333;
+  margin: 0px 0px 0px -10px;
+}
+
+.pill {
+  padding: 4px 10px;
+  margin: 0px 3px;
+  border-radius: 25px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #333;
+}
+.pill:focus {
+  outline: none;
+}
+
+.pill span {
+  margin: 2px;
+}
+.pill span:nth-child(3) {
+  margin-left: 5px;
+  padding: 0px 5px;
+  border-left: 1px solid #999;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 1px;
+}
+.menu-button {
+  margin: 0px 0px 0px 5px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* --------------------CSS For TableActions.js Component-------------------- */
+
+.table-actions-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-name {
+  display: flex;
+  align-items: center;
+}
+
+.table-name h4 {
+  font-weight: 500 !important;
+  margin-left: 5px;
+}
+
+.table-name button {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.blue {
+  background-color: #009afe;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.blue span {
+  width: 25px;
+  height: 18px;
+  align-self: center;
+  margin-left: 10px;
+  padding: 2px 0px;
+  border-left: solid 1px #333;
+}
+
+.minimal-button {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+}
+
+.pill-input {
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 7px 10px;
+  border: solid 1px #d8d8d8;
+}
+
+/* --------------------CSS For TableComponent.js Component-------------------- */
+
+.table-container {
+  margin: 50px 0px;
+  padding: 0px 0px 20px 0px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #e6e9f0;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #579bfc;
+}
+
+/* --------------------CSS For ColumnComponent.js Component-------------------- */
+
+.first-column-container {
+  display: inline-block;
+  width: 300px;
+  white-space: pre-wrap;
+  vertical-align: top;
+}
+
+.column-container {
+  margin-left: 2px;
+  display: inline-block;
+  width: 200px;
+  overflow-x: hidden;
+  vertical-align: top;
+  text-align: center;
+}
+
+.first-column-container h4 {
+  display: flex;
+  align-items: center;
+}
+
+.first-column-container h4 .collapse-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #569afb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-header {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400 !important;
+  margin-bottom: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.row-header:hover {
+  background-color: #e6e9f0;
+}
+
+.first-column-container .row-header {
+  color: #569afb;
+  font-size: 18px;
+}
+
+.popup-content {
+  width: fit-content !important;
+  padding: 5px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* --------------------CSS For RowComponent.js Component-------------------- */
+
+.eachRow {
+  width: 100%;
+  height: 40px;
+  background-color: #e6e9f0;
+  margin-bottom: 2px;
+  display: flex;
+}
+
+.first-column-container .eachRow button {
+  text-align: start !important;
+}
+
+.handle {
+  height: 100%;
+  width: 10px;
+  background-color: #569afb;
+  margin-right: 10px;
+}
+
+.eachRow button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.Working {
+  background-color: #fdab3d !important;
+  color: #fff !important;
+}
+
+.Stuck {
+  background-color: #e2445b !important;
+  color: #fff !important;
+}
+
+.Done {
+  background-color: #01c875 !important;
+  color: #fff !important;
+}
+
+.Waiting {
+  background-color: #569afb !important;
+  color: #fff !important;
+}
+
+.Urgent {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.Low {
+  background-color: #579bfc !important;
+  color: #fff !important;
+}
+
+.High {
+  background-color: #e2445b !important;
+  color: #fff !important;
+}
+
+.Medium {
+  background-color: #794bd1 !important;
+  color: #fff !important;
+}
+
+/* --------------------CSS For Popup Components-------------------- */
+
+.popup-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.popup-button {
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  border: none;
+}
