@@ -8,6 +8,6 @@ This is an Assignment. This project was bootstrapped with [Create React App](htt
 
 
 ## Alternatively use this link to view the project online.
-[Assignment](https://rankzassignment.netlify.app/)
+[Assignment](https://task-dashboard.netlify.app/)
 
 
